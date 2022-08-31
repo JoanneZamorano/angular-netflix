@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="logos">
+        <div>
+            <img src="https://res.cloudinary.com/djbn99sev/image/upload/v1661270198/logo_netflix_corto_vy5zlt.jpg" alt="logo netflix" width="150px">
+        </div>
+        <div>
+            <ul class="menu">
+                <li>INICIO</li>
+                <li>BUSCAR</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bloque top">
+        <!--<app-hero [hero]="herofilms"></app-hero>-->
+        <app-hero [hero]="topFilms"></app-hero>
+    </div>
+    <div class="bloque">
+        <app-films [films]="comedyFilms"></app-films>
+    </div>
+    <div class="bloque">
+        <app-films [films]="terrorFilms"></app-films>
+    </div>
+    <div class="bloque">
+        <app-films [films]="accionFilms"></app-films>
+    </div>
+    <div class="bloque">
+        <app-films [films]="dramaFilms"></app-films>
+    </div>
+    <div class="bloque">
+        <app-films [films]="scifiFilms"></app-films>
+    </div>
+    <div class="bloque">
+        <app-films [films]="animeFilms"></app-films>
+    </div>
+
+
+</div>
+
+
+<router-outlet></router-outlet>
